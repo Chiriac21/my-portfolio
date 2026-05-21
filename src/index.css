@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-900 text-white font-inter overflow-x-hidden;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600;
+  }
+  
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10 shadow-xl;
+  }
+}
